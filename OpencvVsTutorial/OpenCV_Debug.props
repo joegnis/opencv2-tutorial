@@ -6,10 +6,11 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_core2412d.lib;opencv_highgui2412d.lib;opencv_imgproc2412d.lib;opencv_ml2412d.lib;opencv_video2412d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\staticlib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;zlibd.lib;IlmImfd.lib;opencv_core2412d.lib;opencv_highgui2412d.lib;opencv_imgproc2412d.lib;opencv_ml2412d.lib;opencv_video2412d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
